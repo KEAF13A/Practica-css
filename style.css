@@ -9,6 +9,9 @@
     vertical-align: baseline;
 
 }
+body{
+  margin: auto
+}
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
@@ -167,7 +170,6 @@ a{
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px #e2e1e1;
     background-color: var(--Color-blue-icons-inter);
-    z-index: 1;
 }
 
 .image-Schedule-container{
@@ -188,6 +190,43 @@ a{
     color: var(--Color-title);
     font-size: 20px;
 }
-.image-doctor{
-    height: 100px;
+
+.information-card{
+  margin: 60px 0px 0px 150px;
+  width: 90vh;
+  height: 15vh;
+  border: 2px solid #d4d4d4;
+  background: rgba(255,255,255,0.69);
+  display: grid;
+ grid-template-columns: repeat(4,1fr);
+}
+
+.Location{
+  grid-column: 1/4;
+  padding: 3vh;
+  margin: 15px 0px 0px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7%;
+  height: 100%;
+  border-radius: 5px;
+  margin: 0px 12px 0px 0px;
+  box-shadow: 0px 0px 10px 0px #e2e1e1;
+  background-color: var(--Color-blue-icons-inter);
+}
+.img-location{
+  height: 2vh;
+}
+
+.text-location{
+  font-family: var(--Font-main);
+  color: var(--Color-blue);
+  font-weight: 600;
+  font-size: 15px;
 }
