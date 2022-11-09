@@ -1,0 +1,193 @@
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+:root{
+    --Color-white: #ffffff;
+    --Color-blue:  #2f4fcd ;
+    --Color-blue-2: #1f7fdf;
+    --Color-blue-icons-inter:#bcddff; 
+    --Color-second: #eef3ff;
+    --Color-title: #031974;
+    --Font-main: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: var(--Color-white);
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--Color-white);
+    width: 100%;
+    height: 15vh;
+    font-family: var(--Font-main);
+    position: absolute;
+}
+.title-logo{
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--Color-blue);
+}
+
+.nav-main{
+    width: 50%;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction:row;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+.nav-lis{
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    margin-left: 5px;
+}
+a{
+    color: inherit;
+}
+.nav-lis-special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Color-white);
+    background-color: var(--Color-blue);
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 7px 31px 24px -18px #8a8a8a,
+                0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.first-main-information{
+    display:flex;
+    align-items: center;
+    width: 90%;
+    height: 80vh;
+    background-color: #fcfcfc;
+    font-family: var(--Font-main);
+}
+
+.information-main{
+    width: 100%;
+    margin: 60vh 0vh 0vh 7vh;
+}
+
+.information-main-area{
+    margin: 0px 0px 0px 50px;
+    padding: 30px;
+    width: 60%;
+}
+
+.information-title{
+    color:  #031974;
+    font-weight: 600;
+    font-size: 4.5rem;
+}
+
+.information-text{
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 18px;
+    width: 60%;
+    line-height: 2rem;
+    color:#a3a3a3    
+}
+.information-icons{
+    width: auto;
+    margin: 40px 0px 180px 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-text-one{
+    height: 20px;
+    width: 35%;
+    background-image: url(assets/Icon-escudo.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.icon-text-two{
+    height: 20px;
+    width: 40%;
+    background-image: url(assets/Icon-estrella.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.icon-text-one::before{
+    font-family: var(--Font-main);
+    font-weight: 600;
+    content: "Best Protection";
+    color: var(--Color-title);
+    font-size: 15px;
+    margin: 0px 0px 0px 50px;
+}
+
+.icon-text-two::before{
+    font-family: var(--Font-main);
+    font-weight: 600;
+    content: "Selected Vaccines";
+    color: var(--Color-title);
+    font-size: 15px;
+    margin: 0px 0px 0px 50px;
+}
+
+.information-Schedule-container-main{
+    margin: 10px 0px 0px 80px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-Schedule{
+    margin: 0px 25px 0px 0px;
+    width: 6%;
+    height: 85%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #e2e1e1;
+    background-color: var(--Color-blue-icons-inter);
+    z-index: 1;
+}
+
+.image-Schedule-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-Schedule{
+    width: 100%;
+    height: 25px;
+}
+
+.information-Schedule{
+    font-family: var(--Font-main);
+    font-weight: 600;
+    color: var(--Color-title);
+    font-size: 20px;
+}
+.image-doctor{
+    height: 100px;
+}
